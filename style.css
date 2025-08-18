@@ -4,3 +4,62 @@
     background-position: center;
     min-height: 100vh;
 }
+#testimonials {
+   background-image: url("images/testimonial_bg.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 80px 0;  /* better than fixed height */
+} 
+
+.testimonial {
+    border: 1px solid #c9ced3;
+    border-top: 3px solid #c9ced3;
+    padding: 70px 25px 100px;
+    margin-bottom: 30px;
+    position: relative;
+    background: #fff; /* so text is visible on bg */
+}
+.testimonial:after{
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #00adb7;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.testimonial .description{
+    font-size: 14px;
+    color: #666;
+    line-height:26px;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -30px;
+    left: 25px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.testimonial .testimonial-title{
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+}
+.testimonial .testimonial-title small{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 7px;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    background: #00adb7;
+}
